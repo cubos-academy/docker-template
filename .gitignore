@@ -1,0 +1,8 @@
+node_modules
+.vscode
+postgres-data
+.env
+package-lock.json
+yarn.lock
+Dockerfile
+docker-compose-yml
