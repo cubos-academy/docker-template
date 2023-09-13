@@ -3,7 +3,7 @@ version: "3.7"
 services:
   # Node.js app
   app:
-    container_name: app-node-template # Name of your application, stay here
+    container_name: docker-back-template # Name of your application, stay here
     build:
       context: .
       dockerfile: Dockerfile # If you already have a Dockerfile for your Node.js application, use it here

@@ -5,4 +5,4 @@ postgres-data
 package-lock.json
 yarn.lock
 Dockerfile
-docker-compose-yml
+docker-compose.yml
