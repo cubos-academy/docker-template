@@ -1,0 +1,23 @@
+# Use a Node.js base image (you can specify the desired version)
+FROM node:14
+
+# Set the working directory in the container
+WORKDIR /
+
+# Copy the package.json and package-lock.json file to the container
+COPY package*.json ./
+
+# Install Node.js dependencies
+RUN npm install
+
+# Install the PostgreSQL client
+RUN apt-get update && apt-get install -y postgresql-client
+
+# Copy the project source code to the container
+COPY . .
+
+# Expose the port that the Node.js application uses (if applicable)
+EXPOSE 3000
+
+# Comando para iniciar sua aplicação Node.js (ajuste conforme necessário)
+CMD ["npm", "start"]
