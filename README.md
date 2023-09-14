@@ -23,7 +23,6 @@ Open the project folder with the command:
 Copy the file to all files that have the .example extension to their name without the .example with the following command:
 
 ```bash
-  cp .env.example .env
   cp docker-compose.yml.example docker-compose.yml
   cp Dockerfile.example Dockerfile
 ```
