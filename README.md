@@ -43,7 +43,7 @@ docker-compose up -d
 After starting the containers, run the following command to connect to the container via ssh:
 
 ```bash
-docker exec -it app-node-template sh
+docker exec -it docker-back-template sh
 ```
 
 Run migrations
