@@ -13,7 +13,6 @@ router.get('/', async (req, res) => {
 
 let client = null
 
-
 router.get('/test', async (req, res) => {
     try {        
         client = new Client({
