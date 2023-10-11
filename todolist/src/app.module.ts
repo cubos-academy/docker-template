@@ -8,12 +8,12 @@ import { UserModule } from './modules/user/user.module';
   imports: [
      TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'postgres',
-      port: 5432,
-      username: 'postgres',
-      password: 'postgres',
-      database: 'mydatabase',
-      entities: [__dirname + '/**/*.entity{.ts,.js}'], // Caminho relativo com base no diretório atual
+      host: process.env.HOST_ENV,
+      port: parseInt(process.env.PORT_ENV),
+      username: process.env.USERNAME_ENV, 
+      password: process.env.PASSWORD_ENV,
+      database: process.env.DATABASE_ENV,
+      entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
     UserModule
