@@ -20,6 +20,7 @@ After starting the containers, run the following command to connect to the conta
 docker exec -it node-front-react sh
 ```
 
+
 Command to stop the container
 ```bash
 docker composer stop
