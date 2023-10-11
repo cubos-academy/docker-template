@@ -11,21 +11,26 @@ The default configuration will allow the project to run on port 3000 on localhos
 Clone the repository with the following command:
 
 ```bash
-  git clone git@github.com:cubos-academy/app-node-template.git
+  git clone git@github.com:cubos-academy/docker-template.git
 ```
 
 Open the project folder with the command:
 
 ```bash
-  cd app-node-template
+  cd docker-template
 ```
 
 Copy the file to all files that have the .example extension to their name without the .example with the following command:
 
 ```bash
-  cp docker-compose.yml.example docker-compose.yml
-  cp Dockerfile.example Dockerfile
+  # back
+  cp docker-compose-back.yml.example docker-compose.yml
+
+  # Front
+  cp docker-compose-front.yml.example docker-compose.yml
 ```
+
+
 
 Assuming you have Docker and Docker Compose installed on your machine, start the containers with the following command:
 
