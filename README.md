@@ -17,7 +17,7 @@ docker-compose up -d
 After starting the containers, run the following command to connect to the container via ssh:
 
 ```bash
-docker exec -it node-back-nestjs sh
+docker exec -it back-nestjs sh
 ```
 
 Command to stop the container
