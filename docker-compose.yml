@@ -1,7 +1,7 @@
 version: "3"
 services:
   node:
-    container_name: node-front
+    container_name: node-front-nextjs
     image: "node:18"
     restart: always
     user: "node"
