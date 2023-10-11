@@ -1,7 +1,7 @@
 version: "3"
 services:
   frontend:
-    container_name: node-front-react
+    container_name: front-react
     image: "node:18"
     restart: always
     user: "node"
