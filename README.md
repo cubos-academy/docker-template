@@ -17,7 +17,7 @@ docker-compose up -d
 After starting the containers, run the following command to connect to the container via ssh:
 
 ```bash
-docker exec -it node-back-express sh
+docker exec -it back-express sh
 ```
 
 Command to stop the container

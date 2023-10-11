@@ -1,15 +1,18 @@
 version: "3"
 services:
-  node:
-    container_name: node-back-express
+  backend:
+    container_name: back-express
     image: "node:18"
     restart: always
     user: "node"
     working_dir: /home/node/app
     environment:
-      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+      - FAST_REFRESH=false
+      - WDS_SOCKET_PORT=30000
     volumes:
-      - ./src:/home/node/app
+      - ./app:/home/node/app
     expose:
       - "3001"    
     command: "sh -c 'npm install && npm run dev'"
