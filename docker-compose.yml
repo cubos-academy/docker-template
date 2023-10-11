@@ -1,13 +1,16 @@
 version: "3"
 services:
-  node:
-    container_name: node-back-nest
+  backend:
+    container_name: back-nestjs
     image: "node:18"
     restart: always
     user: "node"
     working_dir: /home/node/app
     environment:
-      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+      - FAST_REFRESH=false
+      - WDS_SOCKET_PORT=30000
     volumes:
       - ./todolist:/home/node/app
     expose:
