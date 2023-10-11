@@ -1,7 +1,7 @@
 version: "3"
 services:
   node:
-    container_name: node
+    container_name: node-back-express
     image: "node:18"
     restart: always
     user: "node"
