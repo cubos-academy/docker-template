@@ -9,7 +9,7 @@ services:
     environment:
       - NODE_ENV=development
     volumes:
-      - ./:/home/node/app
+      - ./src:/home/node/app
     expose:
       - "3001"    
     command: "sh -c 'npm install && npm run dev'"
