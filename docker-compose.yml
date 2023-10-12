@@ -7,12 +7,17 @@ services:
     user: "node"
     working_dir: /home/node/app
     environment:
+      - HOST_ENV=postgres
+      - PORT_ENV=5432
+      - USERNAME_ENV=postgres
+      - PASSWORD_ENV=postgres
+      - DATABASE_ENV=mydatabase
       - CHOKIDAR_USEPOLLING=true
       - WATCHPACK_POLLING=true
       - FAST_REFRESH=false
       - WDS_SOCKET_PORT=30000
     volumes:
-      - ./app:/home/node/app
+      - ./todolist:/home/node/app
     expose:
       - "3001"    
     command: "sh -c 'npm install && npm run dev'"
